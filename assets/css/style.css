@@ -33,6 +33,7 @@ body {
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
+	overflow: hidden;
 	font-family: 'Montserrat', sans-serif;
 	background: #c1f5ab;
 }
@@ -47,16 +48,15 @@ body {
 .header {
 	position: absolute;
 	width: 100%;
-	height: 150px;
+	height: 130px;
 	top: 0;
 	left: 0;
 	background: #fff;
 }
 
 .header-container {
-	margin: 1.75rem auto;
-	width: 80%;
-	height: 2.5rem;
+	padding: 15px;
+	width: 100%;
 	background-color: #ffffff;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .profile__avatar img {
-	width: 32px;
+	width: 25px;
 	height: auto;
 	margin-right: 10px;
 }
@@ -82,10 +82,15 @@ body {
 	font-size: 14px;
 	font-weight: 600;
 	font-style: italic;
-	margin: 0 220px 0 0;
+	margin: 0 210px 0 0;
 }
 
 .profile__settings {
+}
+
+.profile__settings img {
+	width: 25px;
+	height: auto;
 }
 
 .header__navigation {
@@ -99,8 +104,8 @@ body {
 	align-items: center;
 	background: #d9d9d9;
 	max-width: 100%;
-	width: 50px;
-	height: 50px;
+	width: 35px;
+	height: 35px;
 	border-radius: 50%;
 }
 
@@ -113,11 +118,11 @@ body {
 .page__container {
 	display: flex;
 	flex-direction: column;
-	padding: 180px 20px 0px;
+	padding: 150px 15px 0px;
 }
 .page__title {
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .games {
@@ -128,20 +133,20 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 20px 0 0 0;
+	padding: 20px 0 20px 0;
 	text-align: center;
 	font-size: 16px;
 }
 
 .games__container {
 	width: 100%;
-	padding: 60px;
+	padding: 35px;
 	border-radius: 15px;
 	background-color: #d9d9d9;
 }
 
 .games__container:not(:last-child) {
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 }
 
 .coin-count-container {
@@ -223,7 +228,7 @@ body {
 }
 
 .button img {
-	width: 40px;
+	width: 30px;
 	height: auto;
 }
 
@@ -705,22 +710,20 @@ button:active {
 }
 
 .footer {
-	padding: 20px 0;
+	padding: 10px 0;
 	background: #ffffff;
 }
 
 /* MEDIA */
-@media screen and (min-width: 479px) {
+/* @media screen and (min-width: 479px) {
 	.page__container {
 		padding-bottom: 20px;
 	}
 }
 
 @media screen and (max-width: 479px) {
-	.games__container {
-		padding: 50px;
-	}
+
 	.page__title {
 		font-size: 25px;
 	}
-}
+} */
